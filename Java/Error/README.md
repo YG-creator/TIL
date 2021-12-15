@@ -107,3 +107,21 @@ controller로 매핑후 -> 경로를 해당 URL로 함
 uncaught referenceerror $ is not defined
 
 js 보다 앞에 jquery 선언해줘야됨
+
+
+
+# git 용량 초과 에러
+
+> error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 8)
+>
+> 용량이 커서 생긴 문제였음
+
+1. ```
+   git config --global http.version HTTP/1.1
+   ```
+
+2. ```
+   git config --global http.postBuffer 524288000
+   ```
+
+3.  폴더에서 용량 큰거 지우기 -> .git 지우기 -> $git init -> remote 설정 ->$git remote add origin https://github.com/YG-creator/TIL.git -> git add .  -> $git commit -m -> $ git push -u origin master
