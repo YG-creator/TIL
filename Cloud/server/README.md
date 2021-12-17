@@ -127,7 +127,7 @@ grant all privileages on *.* to '사용자'@'%'; : 사용자에게 모든 권한
 
 ​	프로토콜 : SFTP / 호스트 : PUTTY에 등록한 IP  /IP  포트 : PUTTY에 등록한 port
 
-2. 로컬사이트 -> 리모트 사이트
+2. 로컬사이트 -> 리모트 사이트(/opt/tomcat/apache-tomcat-9.0.56/webapps)
 
    리모트사이트 위치 설정후 -> 로컬사이트에서 업로드하기
 
@@ -146,18 +146,26 @@ grant all privileages on *.* to '사용자'@'%'; : 사용자에게 모든 권한
 
 # tomcat manager
 
-cd /opt/tomcat/apach~/webapps/manager/META-INF
+1. context.xml 수정
 
-vi context.xml  -> valve 부분 주석처리
+   cd /opt/tomcat/apach~/webapps/manager/META-INF
 
+​		vi context.xml  -> valve 부분 주석처리
 
+2. conf 수정
 
-cd /opt/tomcat/apach~/conf
+​		cd /opt/tomcat/apach~/conf
 
-vi tomcat-users.xml
+​		vi tomcat-users.xml
 
-role 부분 수정(manager-gui, manager-script, manager-status추가, username,password 설정)
+​		role 부분 수정(manager-gui, manager-script, manager-status추가, username,password 설정)
 
-id : tomcat_admin
+3.  등록한 거
 
-pwd : mcsn
+​		id : tomcat_admin
+
+​		pwd : mcsn
+
+​		manager 주소 : http://49.50.160.48:8080/manager
+
+​		team prj 주소 : http://49.50.160.48:8080/hospital/login_form
