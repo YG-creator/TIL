@@ -52,6 +52,8 @@ var size = $('input[class="langs"]:checked').length;
 
 * .text() : value아닌 text 가져오기, 설정하기
 
+  ex) <td id="c_name">text<td>
+
 ```js
 $('#c_name').text('사용자이름')
 ```
@@ -60,5 +62,13 @@ $('#c_name').text('사용자이름')
 
 ```js
 $('#choice_box').html('<input type="checkbox" id="direct">선택');
+```
+
+* .val() : value 값 가져오기
+
+  ex) <input type="text" value="~">
+
+```java
+$('#choice_box').val();
 ```
 

@@ -234,3 +234,10 @@ function sendWords(){
 
    > ajax
 
+
+
+# 참조
+
+[클라우드서버생성 - YouTube](https://www.youtube.com/watch?v=xt1g4CHgZ6c)
+
+비밀번호 : mcsn504 
