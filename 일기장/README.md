@@ -129,3 +129,14 @@ DB프로젝트 - 요약 출력하기만 남음
 
 병원 프로젝트 - cloud server에서 tts 안됨
 
+
+
+1/20
+
+list 복사하기(list를 변경하지 않고 일시적으로 변경하고 싶을 때 사용)  -  ref) 코딩테스트>java>List
+
+String 영문자 여부 확인 - ref) 코딩테스트>java>문자열
+
+숫자 자료형(double에서 정수만 출력) - ref) 코딩테스트>java>자료형
+
+ArrayList 에서 포함 여부 - list.contains(x);
