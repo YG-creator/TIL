@@ -140,3 +140,34 @@ String 영문자 여부 확인 - ref) 코딩테스트>java>문자열
 숫자 자료형(double에서 정수만 출력) - ref) 코딩테스트>java>자료형
 
 ArrayList 에서 포함 여부 - list.contains(x);
+
+
+
+2/4
+
+이분탐색(특정값 찾기, 조건 만족하는 최소, 최댓값 찾기)
+
+StringBuilder 다시 봄
+문자열도 정렬 가능(Arrays.sort())
+문자열 비교 : 문자열.compareTo(문자열)
+array 정렬 : Arrays.sort(arr)
+List 정렬 : Collections.sort(list)
+
+
+
+2/22
+
+트리 - 순회(전위,중위,후위), 트리+dp, 트리+dfs
+
+
+
+2/24
+
+BruteForce - 4차배열 사용
+
+백트래킹-중복ㄴㄴ(visited), 오름차순 조합(start)
+
+2차 dp 
+
+bfs - q
+
