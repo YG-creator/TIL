@@ -171,3 +171,13 @@ BruteForce - 4차배열 사용
 
 bfs - q
 
+
+
+3/2
+
+1. 문자열 - split, substring
+bw.write("str\n") or bw.newLine() 안해줘서 계속 틀렸었음
+2. dp 
+오른쪽 아래쪽 이동만 가능 - 최댓값 구하기
+3. 구간 합
+4. 트리+dp
