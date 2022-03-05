@@ -207,3 +207,22 @@ bw.write("str\n") or bw.newLine() 안해줘서 계속 틀렸었음
 덩어리 만들기-> bfs
 3. 플로이드 와샬 - 모든지점의 최단거리
 4. DFS 같아 보이지만 union-find(2차행렬->1차행렬)  해서 부모노드 찾기
+
+
+
+3/5
+
+1. split
+
+   1) string을 여러 특정문자로 분리 - str.split("특정문자|특정문자"); -> | 사용
+
+   2) `는 \\ 없이 분리 가능
+
+   3) 문자열 배열에 특정 문자가 있는지 확인 - Arrays.asList(arr).contains(str)
+
+
+2. 4차 dp
+
+3. 두수의 합(투 포인터) 
+
+4. union-find+ pq를 통한 quick sort
