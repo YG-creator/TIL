@@ -226,3 +226,16 @@ bw.write("str\n") or bw.newLine() 안해줘서 계속 틀렸었음
 3. 두수의 합(투 포인터) 
 
 4. union-find+ pq를 통한 quick sort
+
+
+
+3/7
+
+1. 자료형
+double - 소숫점
+2. LIS-dp
+3. dp
+int[] temp = dp  -> temp 변경하면 dp도 바뀜
+int[] temp = dp.clone();	> temp 변경하면 dp는 안바뀜
+loop:   for   break loop;
+4.벨만포드
