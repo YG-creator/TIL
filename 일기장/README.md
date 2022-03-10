@@ -239,3 +239,12 @@ int[] temp = dp  -> temp 변경하면 dp도 바뀜
 int[] temp = dp.clone();	> temp 변경하면 dp는 안바뀜
 loop:   for   break loop;
 4.벨만포드
+
+
+
+3/ 10
+
+1. 다수 소인수 판별 - 에라토스테네스
+2. dp 
+3. 2차 dp
+4. 그리디(누적 합)
