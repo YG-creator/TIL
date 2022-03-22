@@ -315,3 +315,13 @@ loop:   for   break loop;
 2. 백트래킹(nCr) - 취약 - idx, depth
 3. LCS 공통 연속 부분수열 
 4. 누적합 + 2차 dp  
+
+
+
+3/22 
+
+1. 투포인터 - 연속된 수들의 합
+2. 브루트포스 - map으로 글자중복, index 해결
+3. BFS - 최단거리(중복확인 해야 시간초과 안함)
+4. bfs + 크루스칼 - pq 정렬 
+return o.v >= this.v ? -1 : 1 // 오름차순
