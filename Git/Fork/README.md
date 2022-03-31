@@ -5,6 +5,9 @@
 
 2. forked된 본인 저장소를 `clone` 
 
+    ```bash
+    $ git clone 주소.git
+
 3. 본인 이름으로 된 마크다운 파일 작성 
    ```bash
    $ touch 이름.md
