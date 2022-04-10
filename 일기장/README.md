@@ -455,3 +455,12 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 3. 구현 - h+1 화살 있으면 h+1화살 갯수 1개 감소 && h화살 1증가   /  없으면 h화살 1추가
 
 4. 위상정렬 - 간선추가할때 indegree[child]++, indegree[x] == 0 일때 q에 추가,  res.size() != n이면 사이클
+
+
+
+4/10
+
+1. 문자열 - substing, replace, charAt(), indexOf
+2. 다익스트라 - PriorityQueue, visited
+3. 구현 - 이동->합치기->나누기->무게합
+4. 완전탐색 - 행>=n이면 끝,열>=이면 r+1,0
