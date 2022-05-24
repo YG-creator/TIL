@@ -715,3 +715,71 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    1제외하고 다 연결하기 + 최소 비용 -> 최소스패닝 트리
 
    parent 초기화 -> 이미 연결된거 union 처리 -> Edge 중 1과연결 된거 제외하고 pq에 넣기 -> 연결안된거만 연결하기 -> 최소비용 출력
+
+
+
+5/23
+
+1. [숫자 야구 #2503](https://www.acmicpc.net/problem/2503) 
+
+   완전탐색
+
+   9개중에 3개 뽑기 -> 게임마다 strike, ball 구하기 -> 모든 게임의 strike와 ball 일치하는지 확인 -> 모두 일치하면 cnt++
+
+2. [숨바꼭질 4 #13913](https://www.acmicpc.net/problem/13913) 
+
+   bfs
+
+   s to e 최단시간 -> 완전탐색 -> 시간초과(O(V^2))
+
+   s to e 최단시간 /  +1,-1,x2 이동  && cost는 1로 동일 -> bfs  
+
+   경로추적 - 전 값을 저장(parent[]) + Stack(LIFO)
+
+3. [사다리 조작 #15684](https://www.acmicpc.net/problem/15684)
+
+   백트래킹
+
+   n개중 i개 뽑기 + 사다리타기 결과 확인(dfs)
+
+4. [순회강연 #2109](https://www.acmicpc.net/problem/2109)
+
+   그리디
+
+   완전탐색 -> 시간초과(O(V^2))
+
+   DP -> 이전거 영향 안받음
+
+   bfs-> cost가 일정하지 않음
+
+   그리디 -> 정렬(내림차순) -> O(V) -> 가능
+
+
+
+5/24
+
+1. [게임을 만든 동준이 #2847](https://www.acmicpc.net/problem/2847)
+
+   그리디
+
+   뒤에서 부터 최솟값보다 작게 만들기
+
+2. [1, 2, 3 더하기 7 #15992](https://www.acmicpc.net/problem/15992)
+
+   2차 DP(숫자, 갯수)
+
+   ```java
+   dp[n+1][cnt+1] += dp[n][cnt];
+   dp[n+2][cnt+1] += dp[n][cnt];
+   dp[n+3][cnt+1] += dp[n][cnt];
+   ```
+
+   
+
+3. [목장 건설하기 #14925](https://www.acmicpc.net/problem/14925)
+
+   DP
+
+   해당 영역이 들판일 때만 Math.min(좌,위,왼쪽위 대각선) 저장
+
+   
