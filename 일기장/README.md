@@ -783,3 +783,31 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    해당 영역이 들판일 때만 Math.min(좌,위,왼쪽위 대각선) 저장
 
    
+
+5/25
+
+1. [암기왕 #2776](https://www.acmicpc.net/problem/2776) 
+
+   이분탐색 - nums[] 안에 num 있는지 여부 확인
+
+   완전탐색 -> O(MN) -> 시간초과
+
+   이분탐색 -> O(logN) -> 가능 -> 정렬 후 -> 이분탐색
+
+2. [단축키 지정 #1283](https://www.acmicpc.net/problem/2776) 
+
+   set(중복) + 문자열 파싱(처음, 왼->오)
+
+3. [1,2,3 더하기 6 #15991](https://www.acmicpc.net/problem/15991)
+
+   2차 dp
+
+   완전탐색 -> O(3^n*n) -> 시간초과
+
+   양쪽에 같은 수 더하기 -> dp -> dp[i] = dp[i-2] + dp[i-4] + dp[i-6]  -> 초기값 6까지 해줘야됨(예외)
+
+4. [크게 만들기](https://www.acmicpc.net/problem/2812)
+
+   Stack
+
+   왼쪽거 보다 크면 왼쪽거 k개 까지 삭제 -> 아니면 추가 -> 모두 숫자가 같은경우 주의
