@@ -811,3 +811,40 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    Stack
 
    왼쪽거 보다 크면 왼쪽거 k개 까지 삭제 -> 아니면 추가 -> 모두 숫자가 같은경우 주의
+
+
+
+5/26
+
+1. [NBA 농구 #2852](https://www.acmicpc.net/problem/2852)
+
+   Stack(LIFO) + 문자열(파싱)
+
+   승리 -> 무승부  /   승리~마지막
+
+2. [여러분의 다리가 되어 드리겠습니다! #17352](https://www.acmicpc.net/problem/17352)
+
+   분리집합
+
+   다 연결하기 -> union-find
+
+3. [서강그라운드 #14938](https://www.acmicpc.net/problem/14938)
+
+   플로이드 워셜
+
+   i to j 거리 구하기 + 조건(m보다 작아야됨) -> sum(item[j])
+
+4. [LCS 3 #1958](https://www.acmicpc.net/problem/1958)
+
+   3차 dp
+
+   ```java
+   // 같은 경우
+   dp[i][j][k] = dp[i-1][j-1][k-1] + 1;
+   // 다른 경우
+   dp[i][j][k] = Math.max(dp[i-1][j][k],dp[i][j-1][k],dp[i][j][k-1])
+   ```
+
+   
+
+   
