@@ -848,3 +848,23 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    
 
    
+
+5/27
+
+1. [에라토스테네스의 체 #2960](https://www.acmicpc.net/problem/2960)
+
+   다수 소수 판별
+
+2. [1, 2, 3 더하기 8 #15993](https://www.acmicpc.net/problem/15993)
+
+   2차 dp(합,홀짝)
+
+3. [점프왕 쩰리 (Large) #16174](https://www.acmicpc.net/problem/16174)
+
+   bfs(특정 숫자만큼 직진 이동) - 범위, 중복처리
+
+4. [동전 분배](https://www.acmicpc.net/problem/1943)
+
+   dp(냅색)
+
+   dp[j-v] == true -> dp[j-v+v*k] = true
