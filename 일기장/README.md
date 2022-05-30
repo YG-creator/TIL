@@ -736,7 +736,7 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    경로추적 - 전 값을 저장(parent[]) + Stack(LIFO)
 
-3. [사다리 조작 #15684](https://www.acmicpc.net/problem/15684)
+3. [사다리 조작 #15684](https://www.acmicpc.net/problem/15684) v
 
    백트래킹
 
@@ -794,7 +794,7 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    이분탐색 -> O(logN) -> 가능 -> 정렬 후 -> 이분탐색
 
-2. [단축키 지정 #1283](https://www.acmicpc.net/problem/2776) 
+2. [단축키 지정 #1283](https://www.acmicpc.net/problem/1283) 
 
    set(중복) + 문자열 파싱(처음, 왼->오)
 
@@ -863,8 +863,38 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    bfs(특정 숫자만큼 직진 이동) - 범위, 중복처리
 
-4. [동전 분배](https://www.acmicpc.net/problem/1943)
+4. [동전 분배](https://www.acmicpc.net/problem/1943) v
 
    dp(냅색)
 
    dp[j-v] == true -> dp[j-v+v*k] = true
+
+
+
+5/30
+
+1. [균형잡힌 세상 #4949](https://www.acmicpc.net/problem/4949)
+
+   Stack(LIFO)
+
+   균형잡힌 괄호 여부 확인
+
+2. [유기농 배추 #1012](https://www.acmicpc.net/problem/1012)
+
+   BFS
+
+   덩어리 갯수 세기
+
+3. [불장난 #14945](https://www.acmicpc.net/problem/14945) v
+
+   DP
+
+   완전탐색 -> 2^100 -> 시간초과
+
+   이전거 영향(아래, 오른쪽 대각선 이동) + O(n^2) -> dp
+
+4. [후위 표기식 #1918](https://www.acmicpc.net/problem/1918) v
+
+   Stack
+
+   Last가 우선순위가 높으면 pop + 괄호 연산은 우선순위가 가장 낮음 
