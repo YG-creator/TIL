@@ -898,3 +898,39 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    Stack
 
    Last가 우선순위가 높으면 pop + 괄호 연산은 우선순위가 가장 낮음 
+
+
+
+5/31
+
+1. [Four Squares #17626](https://www.acmicpc.net/problem/17626) v
+
+   dp
+
+   그리디 - 높은값부터 더함 -> 틀림
+
+   완전탐색 - > 시간초과
+
+   이전거 영향 + 완전탐색 -> dp - > dp[i] = Math.max(dp[i-j*j]) + 1
+
+2. [친구 #1058](https://www.acmicpc.net/problem/1058)
+
+   완전탐색 - O(50^2) - 친구 or 친구의 친구 세기
+
+3. [나의 인생에는 수학과 함께 #17625](https://www.acmicpc.net/problem/17265) 
+
+   dfs
+
+   그래프이동 + 최댓값 + 최솟값 -> dfs
+
+4. [욕심쟁이 판다 #1937](https://www.acmicpc.net/problem/1937) v
+
+   dfs + dp
+
+   완전탐색 + dfs(그래프 이동) -> 시간초과 
+
+   완전탐색 + dfs(그래프 이동) + dp(4방향, 현재 값중 최댓값 고르기) -> 해결
+
+   
+
+   
