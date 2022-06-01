@@ -933,4 +933,32 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    
 
+   6/1
    
+   1. [LCM #5347](https://www.acmicpc.net/problem/5347) v
+   
+      최소공배수 - 유클리드 호제법
+   
+   2. [원상 복구 (small) #22848](https://www.acmicpc.net/problem/22858) 
+   
+      구현
+   
+      order[d[j] - 1] = s[j] 반복
+   
+   3. [단절점과 단절선 #14675](https://www.acmicpc.net/problem/14675) v
+   
+      트리 (단절점, 단절선) -> 리프 or 루트노드 찾기 -> 간선이 1개인거 찾기
+   
+      아무선 하나만 잘라도 2개로 나눠짐
+   
+      내부노드를 제거하면 2개로 나눠짐
+   
+   4. [웜홀 #1865](https://www.acmicpc.net/problem/1865) v
+   
+      벨만포드
+   
+      음의 가중치 -> 벨만포드 -> 음의 순환여부 확인 -> n-1 upadte 이후 update되면 음의 순환 있는거
+   
+   
+
+최소공배수, 리프or루트노드 찾기, 벨만포드
