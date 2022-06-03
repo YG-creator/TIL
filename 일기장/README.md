@@ -962,3 +962,63 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    
 
 최소공배수, 리프or루트노드 찾기, 벨만포드
+
+
+
+6/2
+
+1. [아이폰 9S #5883](https://www.acmicpc.net/problem/5883)
+
+   완전탐색
+
+   완전탐색 -> O(1000^2) -> 가능
+
+   1. 모든 숫자 종류 구하기 -> set
+
+   2. 숫자 한종류만 빼서 최대연속 구간구하기 -> 완전탐색
+
+2. [관악산 등산 #14699](https://www.acmicpc.net/problem/14699) v
+
+   완전탐색 + dfs + dp
+
+   완전탐색 or dfs -> 시간초과 -> 완전탐색 + dfs + dp
+
+   1. 시작점 -> 완전탐색
+   2. 연결된거 && 높은거만 이동 -> dfs
+   3. dp 값이 있으면 그값 return -> dp   /   dp[now] = Math.max(dp[now], dp[next] + 1)
+
+3. [드래곤 커브 #15685](https://www.acmicpc.net/problem/15685) v
+
+   구현(회전)
+
+4. [우주신과의 교감 #1774](https://www.acmicpc.net/problem/1774) v
+
+   최소 스패닝 트리
+
+   최단거리 + 다연결하기 -> 최소스패닝 트리
+
+   1. 이미 연결된거 입력 -> 분리 - 집합
+   2. pq에 시작점, 끝점, 거리(위치로 구하기)
+   3. 연결안된거만 연결하기  -> 분리 - 집합
+
+​			주의 : 거리 자료형 double로 하기 ++ 
+
+​					 소숫점 표현식 = String.format(".nf",ans)
+
+6/3
+
+1. [카드 놓기 #5568](https://www.acmicpc.net/problem/5568)
+
+   백트래킹(중복ㄴ순열) + set(중복제거)
+
+2. [블로그 #21921](https://www.acmicpc.net/problem/21921)
+
+   누적합
+
+3. [숫자 재배치 #16943](https://www.acmicpc.net/problem/16943)
+
+   백트래킹(중복ㄴ순열) + 크기비교
+
+4. [수확 #1823](https://www.acmicpc.net/problem/1823)
+
+   dfs + dp
