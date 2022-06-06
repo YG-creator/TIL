@@ -1022,3 +1022,73 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 4. [수확 #1823](https://www.acmicpc.net/problem/1823)
 
    dfs + dp
+
+
+
+6/4
+
+1. [수리공 항승 #1449](https://www.acmicpc.net/problem/1449)
+
+   그리디(정렬) 
+
+   정렬 -> 기준치보다 크거나 같으면 cnt++
+
+2. [준표의 조약돌 #15831](https://www.acmicpc.net/problem/15831)
+
+   누적합
+
+   연속구간 갯수 세기 -> 최소, 최대 조건 따지기
+
+3. [랭퍼든 수열쟁이야!! #15918](https://www.acmicpc.net/problem/15918) v
+
+   백트래킹
+
+   중복 2개 순열 + n과 n사이에는 n개의 숫자 + 1개는 고정
+
+4. [커플 만들기 #1727](https://www.acmicpc.net/problem/1727) v
+
+   그리디 + dp
+
+   그리디 + 완전탐색 -> 시간초과(O(100^1000))
+
+   그리디 + dp -> 가능
+
+   ```java
+   1. 남자 여자 정렬
+   2. dp[i][j] = dp[i-1][j-1] + Math.abs(men[i]-women[j])
+   3. 남자가 안만나는 경우 + 여자가 안만나는 경우
+   if(i > j) dp[i][j] = Math.min(dp[i][j],dp[i-1][j])
+   else if(i < j) dp[i][j] = Math.min(dp[i][j],dp[i][j-1])
+   ```
+
+
+
+
+6/6
+
+1. [스택 #10828](https://www.acmicpc.net/problem/10828)
+
+   스택
+
+   push, pop, isEmpty(), size()
+
+2. [휴게소 세우기 #1477](https://www.acmicpc.net/problem/1477)
+
+   이분탐색
+
+   1. 최대거리의 최솟값 구하기 
+   2. cnt += 거리 / mid 
+   3. cnt < m 이면 e = m-1   /  cnt > =m 이면 s = m+1
+
+3. [회전 초밥 #15961](https://www.acmicpc.net/problem/15961)
+
+   슬라이딩 윈도우
+
+   1. 초기값(연속 k개)
+   2. 처음거 빼고 다음거 더하기 반복
+
+4. [역사 #1613](https://www.acmicpc.net/problem/1613)
+
+   플로이드 와샬
+
+   여러개 전후관계 따지기 -> 단방향 그래프 
