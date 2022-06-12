@@ -1097,23 +1097,23 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
 6/7
 
-1. [별 찍기 - 19 #10994 ](https://www.acmicpc.net/problem/10994)v
+1. [별 찍기 - 19 #10994 ](https://www.acmicpc.net/problem/10994)
 
    재귀
 
    한변의 길이가 4n-3 인 정사각형 그리기 반복(위,아래,왼,오)
 
-2. [배열 돌리기 3 #16935](https://www.acmicpc.net/problem/16935) v
+2. [배열 돌리기 3 #16935](https://www.acmicpc.net/problem/16935) 
 
    구현(회전(90,-90), 대칭(상하,좌우), 덩어리 회전)
 
-3. [퍼레이드 #16168](https://www.acmicpc.net/problem/16168) v
+3. [퍼레이드 #16168](https://www.acmicpc.net/problem/16168) vv
 
    오일러 경로
 
    한붓그리기
 
-4. [궁금한 민호 #1507](https://www.acmicpc.net/problem/1507) v
+4. [궁금한 민호 #1507](https://www.acmicpc.net/problem/1507) vv
 
    역 플로이드 와샬
 
@@ -1129,7 +1129,7 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    누적합이 m이면 cnt++, 작으면 e++, 크면 s++
 
-2. [파닭파닭 #14627 ](https://www.acmicpc.net/problem/14627) v
+2. [파닭파닭 #14627 ](https://www.acmicpc.net/problem/14627) vv
 
    이분탐색
 
@@ -1186,4 +1186,25 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    거리가 짧아질때 갱신
 
-   
+
+
+
+6/12
+
+1. [적록색약 #10026](https://www.acmicpc.net/problem/10026)
+
+   bfs
+
+   조건만 변경(적색, 녹색)
+
+2. [빗물 #14719](https://www.acmicpc.net/problem/14719) v
+
+   구현
+
+   왼쪽 최댓값, 오른쪽 최댓값 구하기 -> ans += (왼쪽, 오른쪽 최솟값 - 높이)
+
+3. [게임 개발 #1516](https://www.acmicpc.net/problem/1516) v
+
+   위상정렬
+
+   순서 정하기
