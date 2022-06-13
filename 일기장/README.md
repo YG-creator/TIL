@@ -1203,8 +1203,49 @@ return o.v >= this.v ? -1 : 1 // 오름차순
 
    왼쪽 최댓값, 오른쪽 최댓값 구하기 -> ans += (왼쪽, 오른쪽 최솟값 - 높이)
 
-3. [게임 개발 #1516](https://www.acmicpc.net/problem/1516) v
+3. [게임 개발 #1516](https://www.acmicpc.net/problem/1516) vv
 
    위상정렬
 
    순서 정하기
+
+
+
+6/13
+
+1. [Maximum Subarray #10211](https://www.acmicpc.net/problem/10211)
+
+   누적합
+
+   연속구간합 최댓값 구하기 -> 누적합 -> 완전탐색 sum[i] - sum[j] (j<i) 최댓값 구하기
+
+2. [쉬운 최단거리 #14940](https://www.acmicpc.net/problem/14940)
+
+   bfs
+
+   그래프 최단거리 -> bfs(Queue)
+
+   1. 출발점 0으로 출발
+   2. 상하좌우 이동
+   3. 범위, 중복, 조건 처리
+   4. 출력(바위가 아닌데 거리가 0이면 -1 출력)
+
+3. [최소비용 구하기 #1916](https://www.acmicpc.net/problem/1916) v
+
+   s to e 최소비용 1개 -> 다익스트라
+
+   1. dist, edges, visited, pq 초기과 및 입력
+   2. pq에 (s,0) 넣기
+   3. 거리가 최소이고, 방문 안한거면 dist 값 입력
+   4. dist[e] 출력
+
+   주의 : 중복처리할 때 poll() 하고 바로 다음에 해야 됨
+
+4. [북쪽나라의 도로 #1595](https://www.acmicpc.net/problem/1595) v
+
+   트리의 지름 최댓값 구하기
+
+   1. 간선 입력
+   2. dfs(1,0) -> 트리의 지름이 최대인 지점 구하기
+   3. dfs(start,0) -> 트리의 지름 최댓값 구하기
+   4. 출력
