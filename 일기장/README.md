@@ -1249,3 +1249,33 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    2. dfs(1,0) -> 트리의 지름이 최대인 지점 구하기
    3. dfs(start,0) -> 트리의 지름 최댓값 구하기
    4. 출력
+
+
+
+6/14
+
+1. [진우의 달 여행 (Small) #17484](https://www.acmicpc.net/problem/17484) v
+
+   3차 dp (x,y,방향) + 연속 같은 방향 ㄴ
+
+2. [색종이 만들기 #2630](https://www.acmicpc.net/problem/2630) v
+
+   재귀(분할정복)
+
+3. [MST 게임 #16202](https://www.acmicpc.net/problem/16202) v
+
+   최소스패닝 트리 반복(1개씩 제거) + 다 연결됐는지 확인 
+
+4. [박스 채우기 #1493](https://www.acmicpc.net/problem/1493) v
+
+   분할정복 + 그리디
+
+   1. 큰거부터 반복 
+      1. before *= 8
+      2. 전체 갯수 = 전체부피 / 큐브 부피 - before
+      3. before, ans += Math.min(큐브갯수, 전체갯수)    
+   2. before == lwh 이면 ans 출력  /  아니면 -1 출력
+
+   자료형 주의, 비트연산 (a<<=n 은 a = a*2^n      ,    a >> i 는 a / 2^i) 
+
+   
