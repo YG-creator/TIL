@@ -1279,3 +1279,37 @@ return o.v >= this.v ? -1 : 1 // 오름차순
    자료형 주의, 비트연산 (a<<=n 은 a = a*2^n      ,    a >> i 는 a / 2^i) 
 
    
+
+6/16
+
+1. [2+1 세일 #11508](https://www.acmicpc.net/problem/11508)
+
+   그리디
+
+   내림차순 정렬 -> 3번 째마다 빼고 더하기
+
+2. [타일 채우기 3 #14852](https://www.acmicpc.net/problem/14852) v
+
+   2차 dp
+
+   ```java
+   dp[i] = dp[i-1]*2 + dp[i-2]*3 + 2*(dp[i-3] + ... dp[i-n])
+   
+   // 시관초과 -> 2*(dp[i-3] + ... dp[i-n]) -> 2차 dp로 해결
+   dp[i][1] = dp[i-1][1] + dp[i-3][0]
+   dp[i][0] = dp[i-1][0]*2 + dp[i-2][0]*3 + 2*dp[i][1]
+   ```
+
+3. [행성 연결 #16398](https://www.acmicpc.net/problem/16398) 
+
+   MST
+
+   최단거리 + 다연결 -> MST
+
+   자료형 주의
+
+4. [파티 #1238](https://www.acmicpc.net/problem/1238)
+
+   플로이드 와샬
+
+   i -> x -> i 최단거리 + 단방향 그래프
